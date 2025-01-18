@@ -43,21 +43,29 @@
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dark Mode</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
   <header>
     <h1>Website dengan Dark Mode</h1>
     <button id="darkModeToggle">Toggle Dark Mode</button>
   </header>
   <main>
     <p>Ini adalah contoh dark mode di website.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
+  <header>
+    <h1>Pop-up Gambar</h1>
+  </header>
+  <main>
+    <!-- Gambar thumbnail -->
+    <img src="thumbnail.jpg" alt="Thumbnail" class="thumbnail" id="thumbnailImage">
+
+    <!-- Pop-up container -->
+    <div id="popup" class="popup">
+      <span id="closePopup" class="close">&times;</span>
+      <img id="popupImage" class="popup-content" src="" alt="Popup Image">
+    </div>
   </main>
   <script src="script.js"></script>
 </body>
