@@ -3,20 +3,24 @@
 function showMessage() {
   alert('Terima kasih telah menghubungi saya!');
 }
-// Ambil tombol toggle
-const toggleButton = document.getElementById('darkModeToggle');
+// script.js
+const toggleButton = document.getElementById('dark-mode-toggle');
 
-// Tambahkan event listener untuk tombol
+// Check if dark mode preference is saved
+if (localStorage.getItem('dark-mode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+}
+
+// Toggle dark mode
 toggleButton.addEventListener('click', () => {
-  // Toggle class 'dark-mode' di elemen body
-  document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('dark-mode');
 
-  // Ubah teks tombol sesuai mode
-  if (document.body.classList.contains('dark-mode')) {
-    toggleButton.textContent = 'Light Mode';
-  } else {
-    toggleButton.textContent = 'Dark Mode';
-  }
+    // Save user preference
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('dark-mode', 'enabled');
+    } else {
+        localStorage.setItem('dark-mode', 'disabled');
+    }
 });
 // Ambil elemen
 const thumbnailImage = document.getElementById('thumbnailImage');
