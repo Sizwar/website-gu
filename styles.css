@@ -58,7 +58,34 @@ button {
 button:hover {
   background-color: #45a049;
 }
+/* Gaya Default (Light Mode) */
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Gaya Dark Mode */
 body.dark-mode {
   background-color: #121212;
   color: white;
+}
+
+button.dark-mode {
+  background-color: #1E88E5;
+  color: black;
 }
