@@ -24,18 +24,52 @@
         }
       
     </style>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Navigation with RGBA</title>
+    <style>
+        nav {
+            background-color: rgba(0, 0, 255, 0.8); /* Latar belakang biru dengan transparansi 80% */
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        a {
+            color: white; /* Teks tetap solid */
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
-  <header>
-    <h1>bro she's so cute broo!</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Beranda</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <section id="home">
     <h2>Beranda</h2>
